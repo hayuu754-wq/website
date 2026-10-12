@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artikel - Muhammad Ilham Aulia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0F172A',
+                        darkCard: '#1E293B',
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 dark:bg-darkBg dark:text-slate-100 transition-colors duration-300 min-h-screen flex flex-col font-sans">
+
+    <header class="sticky top-0 z-40 bg-white/80 dark:bg-darkBg/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <a href="index.html" class="text-xl font-bold bg-gradient-to-r from-blue-600 to-indigo-500 bg-clip-text text-transparent">
+                Website Muhammad Ilham Aulia<span class="text-blue-500">.</span>
+            </a>
+            
+            <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+                <a href="index.html" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Tentang</a>
+                <a href="artikel.html" class="text-blue-600 dark:text-blue-400 font-semibold border-b-2 border-blue-600 dark:border-blue-400 pb-0.5">Artikel</a>
+                <a href="kontak.html" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Kontak</a>
+            </nav>
+
+            <button id="themeToggle" class="p-2 rounded-full hover:bg-slate-200 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-300">
+                <i data-lucide="moon" class="w-5 h-5 hidden dark:block"></i>
+                <i data-lucide="sun" class="w-5 h-5 block dark:hidden"></i>
+            </button>
+        </div>
+    </header>
+
+    <main class="py-12 flex-grow">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-8">
+                <h1 class="text-3xl font-bold tracking-tight">Daftar Artikel</h1>
+                <p class="text-slate-500 dark:text-slate-400 mt-1">Tulisan dan catatan pembelajaran seputar Teknik Komputer & Jaringan.</p>
+            </div>
+
+            <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                <!-- Artikel 1 -->
+                <article class="bg-white dark:bg-darkCard rounded-xl border border-slate-200 dark:border-slate-800 overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col">
+                    <div class="h-40 bg-blue-100 dark:bg-slate-700 flex items-center justify-center">
+                        <i data-lucide="network" class="w-12 h-12 text-blue-500"></i>
+                    </div>
+                    <div class="p-5 flex flex-col flex-grow">
+                        <span class="text-xs text-blue-600 dark:text-blue-400 font-medium mb-1">TKJ • 10 Okt 2026</span>
+                        <h3 class="text-lg font-bold mb-2">Dasar-Dasar Jaringan Komputer</h3>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm mb-4 flex-grow">
+                            Pengenalan IP Address, Subnetting, dan bagaimana perangkat saling terhubung dalam jaringan lokal.
+                        </p>
+                        <a href="index.html" class="text-sm font-semibold text-blue-600 dark:text-blue-400 hover:underline flex items-center gap-1">
+                            Kembali ke Beranda <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="bg-white dark:bg-darkCard rounded-xl border border-slate-200 dark:border-slate-800 overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col">
+                    <div class="h-40 bg-amber-100 dark:bg-slate-700 flex items-center justify-center">
+                        <i data-lucide="server" class="w-12 h-12 text-amber-500"></i>
+                    </div>
+                    <div class="p-5 flex flex-col flex-grow">
+                        <span class="text-xs text-amber-600 dark:text-amber-400 font-medium mb-1">Tutorial • 05 Okt 2026</span>
+                        <h3 class="text-lg font-bold mb-2">Konfigurasi Router Mikrotik Pemula</h3>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm mb-4 flex-grow">
+                            Langkah dasar setting router Mikrotik untuk keperluan lab sekolah atau jaringan rumah.
+                        </p>
+                        <a href="index.html" class="text-sm font-semibold text-blue-600 dark:text-blue-400 hover:underline flex items-center gap-1">
+                            Kembali ke Beranda <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="bg-white dark:bg-darkCard rounded-xl border border-slate-200 dark:border-slate-800 overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col">
+                    <div class="h-40 bg-emerald-100 dark:bg-slate-700 flex items-center justify-center">
+                        <i data-lucide="code" class="w-12 h-12 text-emerald-500"></i>
+                    </div>
+                    <div class="p-5 flex flex-col flex-grow">
+                        <span class="text-xs text-emerald-600 dark:text-emerald-400 font-medium mb-1">Pemrograman • 28 Sep 2026</span>
+                        <h3 class="text-lg font-bold mb-2">Belajar HTML & CSS untuk Siswa SMK</h3>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm mb-4 flex-grow">
+                            Pengalaman membangun website sendiri menggunakan HTML dasar dan framework Tailwind CSS.
+                        </p>
+                        <a href="index.html" class="text-sm font-semibold text-blue-600 dark:text-blue-400 hover:underline flex items-center gap-1">
+                            Kembali ke Beranda <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <footer class="border-t border-slate-200 dark:border-slate-800 py-6 bg-white dark:bg-darkBg">
+        <div class="max-w-5xl mx-auto px-4 text-center text-xs text-slate-500 dark:text-slate-400">
+            <p>©Muhammad Ilham Aulia • SMK 3 Perguruan Cikini</p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        document.getElementById('themeToggle').addEventListener('click', () => {
+            document.documentElement.classList.toggle('dark');
+        });
+    </script>
+</body>
+</html>

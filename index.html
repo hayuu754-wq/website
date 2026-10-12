@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Ilham Aulia - Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0F172A',
+                        darkCard: '#1E293B',
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 dark:bg-darkBg dark:text-slate-100 transition-colors duration-300 min-h-screen flex flex-col font-sans">
+
+    <header class="sticky top-0 z-40 bg-white/80 dark:bg-darkBg/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <a href="index.html" class="text-xl font-bold bg-gradient-to-r from-blue-600 to-indigo-500 bg-clip-text text-transparent">
+                Website Muhammad Ilham Aulia<span class="text-blue-500">.</span>
+            </a>
+            
+            <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+                <a href="index.html" class="text-blue-600 dark:text-blue-400 font-semibold border-b-2 border-blue-600 dark:border-blue-400 pb-0.5">Tentang</a>
+                <a href="artikel.html" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Artikel</a>
+                <a href="kontak.html" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Kontak</a>
+            </nav>
+
+            <button id="themeToggle" class="p-2 rounded-full hover:bg-slate-200 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-300">
+                <i data-lucide="moon" class="w-5 h-5 hidden dark:block"></i>
+                <i data-lucide="sun" class="w-5 h-5 block dark:hidden"></i>
+            </button>
+        </div>
+    </header>
+
+    <main class="py-12 md:py-20 flex-grow">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center md:items-start gap-8">
+                <div class="w-36 h-36 md:w-44 md:h-44 rounded-full bg-gradient-to-tr from-blue-500 to-indigo-600 p-1 shadow-lg flex-shrink-0">
+                    <div class="w-full h-full rounded-full bg-slate-200 dark:bg-slate-800 flex items-center justify-center overflow-hidden">
+                        <img src="ilham.jpeg" alt="Muhammad Ilham Aulia" class="w-full h-full object-cover">
+                    </div>
+                </div>
+
+                <div class="text-center md:text-left flex-grow">
+                    <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight">
+                        Halo, Saya <span class="text-blue-600 dark:text-blue-400">Muhammad Ilham Aulia</span> 👋
+                    </h1>
+
+                    <div class="mt-4 inline-block bg-white dark:bg-darkCard p-4 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm text-left w-full sm:w-auto">
+                        <ul class="space-y-2 text-sm text-slate-600 dark:text-slate-300">
+                            <li class="flex items-center gap-2">
+                                <i data-lucide="graduation-cap" class="w-4 h-4 text-blue-500"></i>
+                                <span><strong>Status:</strong> Pelajar</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i data-lucide="school" class="w-4 h-4 text-blue-500"></i>
+                                <span><strong>Sekolah:</strong> SMK 3 PERGURUAN CIKINI</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i data-lucide="book" class="w-4 h-4 text-blue-500"></i>
+                                <span><strong>Kelas:</strong> XII TKJ B</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i data-lucide="instagram" class="w-4 h-4 text-pink-500"></i>
+                                <span><strong>Instagram:</strong> <a href="https://instagram.com/ilhmseishiroo" target="_blank" class="text-blue-600 dark:text-blue-400 hover:underline">@ilhmseishiroo</a></span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <p class="mt-4 text-slate-600 dark:text-slate-400 leading-relaxed">
+                        Selamat datang di Website Pribadi Saya! Sebagai siswa Teknik Komputer dan Jaringan (TKJ), saya tertarik dengan dunia teknologi, jaringan komputer, pemrograman, serta berbagi wawasan di internet.
+                    </p>
+
+                    <!-- Hyperlink Navigasi Cepat -->
+                    <div class="mt-6 flex flex-wrap justify-center md:justify-start gap-4">
+                        <a href="artikel.html" class="px-5 py-2.5 rounded-lg bg-blue-600 text-white font-medium hover:bg-blue-700 transition-colors flex items-center gap-2">
+                            <i data-lucide="book-open" class="w-4 h-4"></i> Lihat Artikel
+                        </a>
+                        <a href="kontak.html" class="px-5 py-2.5 rounded-lg border border-slate-300 dark:border-slate-700 font-medium hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center gap-2">
+                            <i data-lucide="mail" class="w-4 h-4"></i> Hubungi Saya
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Panduan Membuka YouTube -->
+            <div class="mt-12 bg-white dark:bg-darkCard p-6 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm">
+                <h2 class="text-xl font-bold mb-4 flex items-center gap-2 text-slate-800 dark:text-slate-100">
+                    <i data-lucide="play-circle" class="w-5 h-5 text-red-500"></i> Cara Membuka YouTube
+                </h2>
+                <ol class="list-decimal list-inside space-y-2 text-sm text-slate-600 dark:text-slate-300">
+                    <li><strong>Melalui Browser Laptop/PC:</strong> Buka web browser (Chrome/Edge/Firefox), lalu ketik <code class="bg-slate-100 dark:bg-slate-800 px-2 py-0.5 rounded text-red-500 font-mono">youtube.com</code> pada URL bar dan tekan Enter.</li>
+                    <li><strong>Melalui Smartphone:</strong> Buka aplikasi <strong>YouTube</strong> di HP Android/iOS Anda atau akses <a href="https://m.youtube.com" target="_blank" class="text-blue-600 dark:text-blue-400 hover:underline">m.youtube.com</a> dari browser HP.</li>
+                </ol>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-200 dark:border-slate-800 py-6 bg-white dark:bg-darkBg">
+        <div class="max-w-5xl mx-auto px-4 text-center text-xs text-slate-500 dark:text-slate-400">
+            <p>©Muhammad Ilham Aulia • SMK 3 Perguruan Cikini</p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        document.getElementById('themeToggle').addEventListener('click', () => {
+            document.documentElement.classList.toggle('dark');
+        });
+    </script>
+</body>
+</html>
